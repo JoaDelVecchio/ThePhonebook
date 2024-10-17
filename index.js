@@ -4,7 +4,7 @@ const app = express();
 
 app.use(express.json());
 
-const persons = [
+let persons = [
   {
     id: "1",
     name: "Arto Hellas",
