@@ -8,7 +8,7 @@ app.use(express.json());
 morgan.token("body", (req) => JSON.stringify(req.body));
 
 app.use(
-  morgan(":method :url :status :res[content-lenght] :response-time :body")
+  morgan(":method :url :status :res[content-length] :response-time :body")
 );
 
 let persons = [
