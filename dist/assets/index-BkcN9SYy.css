@@ -1,1 +1,109 @@
-body{background-color:#e5d4b1;font-family:Courier New,Courier,monospace;color:#3b3b3b;margin:0;padding:20px}.book-container{display:flex;justify-content:center;align-items:center;height:100vh}.book-page{background:#fff;padding:20px;border:1px solid #b0a990;box-shadow:5px 5px 15px #0003;max-width:600px;width:90%;margin:auto;position:relative}h1,h2{text-align:center}.form-container{margin:20px 0}label{font-weight:700}.input-field{width:calc(100% - 20px);padding:10px;margin:10px 0;border:1px solid #b0a990;border-radius:4px;background:#faf4e2}.submit-button{background-color:#b0a990;color:#fff;padding:10px 15px;border:none;border-radius:4px;cursor:pointer;transition:background-color .3s}.submit-button:hover{background-color:#9a8b77}.message-container{margin:10px 0}.personList{display:flex;flex-direction:column;justify-content:center;align-items:start;gap:10px}.success-message{background:#e2f0d8;border:1px solid #a0c1a3;padding:10px;border-radius:4px}.unsuccess{color:red;border:solid 3px red}.hidden{display:none}.filter-container{margin:20px 0}.filter-input{width:calc(100% - 20px);padding:10px;border:1px solid #b0a990;border-radius:4px;background:#faf4e2}.deleteButtons{background-color:#b0a990;border:none;color:#fff;padding:4px 6px;border-radius:5px;cursor:pointer;transition:background-color .3s ease,transform .2s ease}.deleteButtons:hover{background-color:#ff1a1a;transform:scale(1.05)}.deleteButtons:active{transform:scale(.95);background-color:#e60000}
+body {
+  background-color: #f7f7f7;
+  font-family: "Inter", sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+.book-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.book-page {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  margin: auto;
+  position: relative;
+}
+h1,
+h2 {
+  text-align: center;
+  font-weight: 600;
+  color: #444;
+}
+.form-container {
+  margin: 30px 0;
+}
+label {
+  font-weight: 500;
+  margin-bottom: 8px;
+  display: block;
+  color: #555;
+}
+.input-field,
+.filter-input {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  font-size: 16px;
+  transition: border-color 0.2s ease;
+}
+.input-field:focus,
+.filter-input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+.submit-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.submit-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+.submit-button:active {
+  background-color: #004090;
+  transform: translateY(0);
+}
+.success-message {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  padding: 12px;
+  border-radius: 6px;
+}
+.unsuccess {
+  color: #d9534f;
+  border: 2px solid #d9534f;
+  padding: 10px;
+  border-radius: 6px;
+}
+.personList {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.hidden {
+  display: none;
+}
+.deleteButtons {
+  background-color: #ff4d4f;
+  color: #fff;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.deleteButtons:hover {
+  background-color: #ff1a1a;
+  transform: scale(1.05);
+}
+.deleteButtons:active {
+  transform: scale(0.95);
+}
